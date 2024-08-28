@@ -1,7 +1,7 @@
 #root {
-  max-width: 1280px;
+  max-width: full;
   margin: 0 auto;
-  padding: 2rem;
+  
   text-align: center;
 }
 
@@ -39,4 +39,24 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* App.css */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 980px; /* Ensures the container takes up at least the full viewport height */
+  background-image: url('/background1.jpg'); /* Path to your background image */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the image */
+  background-color: black;
+}
+
+main {
+  flex: 1; /* Allows the main content to expand and take up available space */
 }
