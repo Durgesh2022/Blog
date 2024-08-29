@@ -1,12 +1,14 @@
 import React from 'react'
 import appwriteService from "../appwrite/config"
 import {Link} from 'react-router-dom'
+import LikeButton from './LikeButton'
 
 function PostCard({$id, title, featuredImage, content}) {
     
   return (
+    <div className='w-full bg-gray-100 rounded-xl p-4'>
     <Link to={`/post/${$id}`}>
-        <div className='w-full bg-gray-100 rounded-xl p-4'>
+        <div >
             <div className='w-full justify-center mb-4'>
                 <img src={appwriteService.getFilePreview(featuredImage)} alt={title}
                 className='rounded-xl' />
@@ -14,10 +16,15 @@ function PostCard({$id, title, featuredImage, content}) {
             </div>
             <h1
             className='text-xl font-bold'
-            >{title}</h1>
+            >{title}  </h1>
             <p className='text-black font-italic '>{content}</p>
+            
         </div>
     </Link>
+   <LikeButton
+   />
+   
+    </div>
   )
 }
 

@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "nodemon main.js"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
@@ -15,6 +16,7 @@
     "appwrite": "^13.0.2",
     "cors": "^2.8.5",
     "html-react-parser": "^4.2.2",
+    "nodemon": "^3.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.46.1",
