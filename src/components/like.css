@@ -3,7 +3,7 @@
   .like-button .heart-icon {
     height: 100px;
     width: 100px;
-    background: url("assets/heart.png");
+    background: url("heart.png");
     background-position: left;
     cursor: pointer;
     position: absolute;
